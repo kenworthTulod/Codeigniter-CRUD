@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2019 at 07:45 AM
+-- Generation Time: May 06, 2019 at 03:40 AM
 -- Server version: 10.1.22-MariaDB
 -- PHP Version: 7.1.4
 
@@ -32,10 +32,12 @@ CREATE TABLE `crud_tbl` (
   `id` int(11) NOT NULL,
   `last_name` varchar(30) NOT NULL,
   `first_name` varchar(30) NOT NULL,
+  `gender` varchar(10) NOT NULL,
   `user_id` varchar(30) NOT NULL,
-  `contact_num` int(50) NOT NULL,
+  `college` varchar(20) NOT NULL,
+  `contact_num` bigint(200) NOT NULL,
   `birthdate` date NOT NULL,
-  `message` varchar(50) NOT NULL,
+  `message` varchar(100) NOT NULL,
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -44,14 +46,15 @@ CREATE TABLE `crud_tbl` (
 -- Dumping data for table `crud_tbl`
 --
 
-INSERT INTO `crud_tbl` (`id`, `last_name`, `first_name`, `user_id`, `contact_num`, `birthdate`, `message`, `created_at`, `updated_at`) VALUES
-(2, 'Montez', 'Klare', '5551', 555, '2015-02-14', 'OOOOOOOOOOOOKKKKKKKKKKKK', '2019-04-24', '0000-00-00'),
-(3, 'dalisay', 'recardo', '123', 123, '1998-08-17', 'asdasd', '2019-04-24', '0000-00-00'),
-(5, 'Tulod', 'Kenworth', '2140470', 123, '1998-08-17', 'Pokemon\r\n', '2019-04-24', '0000-00-00'),
-(6, 'Rosales', 'Jerecko', '11122', 12324, '1998-08-17', 'Malayo pa ang umaga', '2019-04-24', '0000-00-00'),
-(7, 'Pinto', 'Sam', '976136', 12322, '1990-06-24', 'Hello', '2019-04-24', '0000-00-00'),
-(8, 'De la Rosa', 'Bato', '56455', 132, '1980-02-11', 'Iboto ako!', '2019-04-24', '0000-00-00'),
-(9, 'Bernardo', 'Kathryn', '5556', 988, '1998-01-01', 'Dantynatics', '2019-04-25', '0000-00-00');
+INSERT INTO `crud_tbl` (`id`, `last_name`, `first_name`, `gender`, `user_id`, `college`, `contact_num`, `birthdate`, `message`, `created_at`, `updated_at`) VALUES
+(12, 'Peters', 'Adam', 'Female', '842', 'College of Education', 14019976593, '1980-10-14', 'Ea repellendus tenetur.', '2019-05-02', '0000-00-00'),
+(22, 'Gonzaga', 'Alex', 'Female', '1755', 'College of Arts and ', 975, '1999-09-14', 'Hello', '2019-05-02', '0000-00-00'),
+(23, 'Brown', 'Jesus', 'Male', '3763', 'College of Education', 2277318824, '2016-08-17', 'Molestiae vero velit odit neque vitae.', '2019-05-03', '0000-00-00'),
+(29, 'Moreno', 'Nathaniel', 'Female', '8721', 'College of Nursing', 56385356154, '1994-07-19', 'Fugiat illo quia.', '2019-05-02', '0000-00-00'),
+(30, 'Ruiz', 'Kevin', 'Female', '5891', 'College of Nursing', 34046979299, '1997-03-20', 'Nobis optio optio atque.', '2019-05-02', '0000-00-00'),
+(31, 'Parker', 'James', 'Male', '1988', 'College of Business', 65193735650, '1994-12-01', 'Eveniet deleniti earum ab soluta nisi.', '2019-05-02', '0000-00-00'),
+(32, 'Hamilton', 'Ryan', 'Male', '7465', 'College of Law', 72377725618, '1993-03-04', 'Et facere labore minima exercitationem.', '2019-05-02', '0000-00-00'),
+(33, 'Flynn', 'Ann', 'Female', '2501', 'College of Law', 21032013969, '2023-04-25', 'Corrupti voluptatum quasi fuga numquam possimus dicta.', '2019-05-03', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -96,7 +99,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `crud_tbl`
 --
 ALTER TABLE `crud_tbl`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 --
 -- AUTO_INCREMENT for table `user`
 --
