@@ -1,0 +1,136 @@
+<div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Add
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Entry</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            
+            <form method="post" action="<?php echo base_url('CRUD_control/create')?>">
+                
+                <div class="form-group">
+                    <label for="last_name">Lastname</label>
+                    <input type="text" class="form-control" id="last_name" placeholder="Enter Lastname">
+                </div>
+                <div class="form-group">
+                    <label for="first_name">Firstname</label>
+                    <input type="text" class="form-control" id="first_name" placeholder="Enter Firstname">
+                    <!--<small id="first_nameHelp" class="form-text text-muted">Please put your name</small>-->
+                </div>
+                <div class="form-group">
+                    <label for="user_id">User ID</label>
+                    <input type="number" class="form-control" id="user_id" placeholder="Enter User ID">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
+                    <label for="contact_num">Contact Number</label>
+                    <input type="number" maxlength="10" class="form-control" id="contact_num" placeholder="Enter Contact Number">
+                </div>
+                <div class="form-group">
+                    <label for="college">College</label>
+                    <select id="college" class="form-control">
+                        <option value="0">College of Arts and Sciences</option>
+                        <option value="1">College of Business</option>
+                        <option value="2">College of Education</option>
+                        <option value="3">College of Nursing</option>
+                        <option value="4">College of Social Development and Technology</option>
+                        <option value="5">College of Law</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" class="form-control" id="birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" value="save">Save</button>
+            </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+    <br>
+    <br>
+
+    
+        <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th>ID</th>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>User ID</th>
+            <th>Password</th>
+            <th>Contact #</th>
+            <th>College</th>
+            <th>Birtdate</th>
+            <th>Message</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            </tr>
+        </tbody>
+
+        </table>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
